@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Add the message here 
+
+  <form method="POST" action="/new">
+    <label for="username">User Name:</label>
+    <input type="text" name="username"><br><br>
+    <label for="messagetxt">Message text:</label>
+    <input type="text" name="messagetxt"><br><br>
+    <input type="submit" value="Submit">
+  </form>
